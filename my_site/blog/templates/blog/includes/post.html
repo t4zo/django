@@ -1,0 +1,20 @@
+{% load static %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static "blog/post_include.css" %}" />
+{% endblock %}
+
+<li>
+  <article class="post">
+    <a href="{% url "post" post.slug %}">
+      <img src="{% static "blog/images/"|add:post.image %}" alt="{{ post.title }}"
+      />
+      <div class="post__content">
+        <h3>{{ post.title }}</h3>
+        <p>
+          {{ post.excerpt }}
+        </p>
+      </div>
+    </a>
+  </article>
+</li>
