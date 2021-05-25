@@ -14,6 +14,13 @@
         <p>
           {{ post.excerpt }}
         </p>
+            {% comment %} {{ post.tags }} {% endcomment %}
+        {% comment %} {% for post_tag in post_tags %} {% endcomment %}
+            {% comment %} {{ post_tag }} {% endcomment %}
+          {% comment %} {% if(tag == 'New') %}
+            {{ tag }}
+          {% endif %} {% endcomment %}
+        {% comment %} {% endfor %} {% endcomment %}
       </div>
     </a>
   </article>

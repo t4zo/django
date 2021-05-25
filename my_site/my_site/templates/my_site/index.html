@@ -1,9 +1,9 @@
-{% extends 'base.html' %}
+{% comment %} {% extends "base.html" %} {% endcomment %}
 
-{% block title %} 
+{% comment %} {% block title %} 
 My Site
-{% endblock %} 
+{% endblock %}  {% endcomment %}
 
-{% block content %}
-<p>ola</p>
-{% endblock %}
+{% comment %} {% block content %} {% endcomment %}
+<a href="{% url 'blog' %}" style='margin-top: 80px;'>Acessar Blog</a>
+{% comment %} {% endblock %} {% endcomment %}
